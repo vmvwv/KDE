@@ -3,7 +3,9 @@
 
 set -eu
 
-apt install -y --no-install-recommends plasma-desktop sddm kwin-x11 xserver-xorg xrdp xorgxrdp xorg \
-polkit-kde-agent-1 kwalletmanager kate plasma-nm sweeper 
+apt install -y --no-install-recommends sudo kde-plasma-desktop sddm kwin-addons kwin-x11 xserver-xorg xrdp xorgxrdp \
+librsvg2-common plymouth-label \
+kde-baseapp kio-admin polkit-kde-agent-1 kwalletmanager korganizer kate kcalc gwenview plasma-nm sweeper plasma-pa \
+fonts-arphic-ukai fonts-arphic-uming
 systemctl enable --now xrdp
 exit 0
