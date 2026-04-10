@@ -1,0 +1,9 @@
+#!/bin/bash Debian Initiation Program
+#Copyright (c) 2026 By Marvin.W
+
+set -eu
+
+apt install -y --no-install-recommends plasma-desktop sddm kwin-x11 xserver-xorg xrdp xorgxrdp xorg \
+polkit-kde-agent-1 kwalletmanager kate plasma-nm sweeper 
+systemctl enable --now xrdp
+exit 0
