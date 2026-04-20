@@ -6,7 +6,7 @@ set -eu
 apt update
 apt install -y --no-install-recommends kde-plasma-desktop sddm systemsettings kwin-addons kwin-x11 librsvg2-common plymouth-label \
 kde-config-sddm polkit-kde-agent-1 powerdevil kde-config-screenlocker kde-config-gtk-style kde-config-gtk-style-preview \
- kio-extras kio-fuse breeze-gtk-theme sddm-theme-debian-breeze kde-config-plymouth plymouth-theme-breeze \
+ kio-extras smbclient kio-fuse breeze-gtk-theme sddm-theme-debian-breeze kde-config-plymouth plymouth-theme-breeze \
 konsole kio-admin plasma-workspace kwalletmanager kcalc kfind gwenview plasma-nm sweeper plasma-pa kwrite \
 fonts-arphic-ukai fonts-arphic-uming \
 xrdp xorgxrdp
@@ -63,5 +63,8 @@ EOF
 # Disable Screen Lock Automatically:
 sudo -u marvin kwriteconfig6 --file kscreenlockerrc --group Daemon --key Timeout 0
 sudo -u marvin kwriteconfig6 --file kscreenlockerrc --group Daemon --key RequirePassword false
+
+# Designate Locale:
+update-locale LC_TIME=zh_CN.UTF-8
 
 exit 0
