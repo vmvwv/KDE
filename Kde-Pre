@@ -9,7 +9,7 @@ kde-config-sddm polkit-kde-agent-1 powerdevil kde-config-screenlocker kde-config
  kio-extras kio-fuse breeze-gtk-theme sddm-theme-debian-breeze kde-config-plymouth plymouth-theme-breeze \
 konsole kio-admin plasma-workspace kwalletmanager kcalc kfind gwenview plasma-nm sweeper plasma-pa kwrite \
 fonts-arphic-ukai fonts-arphic-uming \
-xrdp xorgxrdp
+xrdp
 systemctl enable --now xrdp
 
 # Fix KDE Network with Wrong Ethernet Interface Inspect:
